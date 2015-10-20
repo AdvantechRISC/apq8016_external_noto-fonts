@@ -92,6 +92,7 @@ font_src_files := \
 # The following fonts are excluded from SMALLER_FONT_FOOTPRINT builds.
 #############################################################################
 ifneq ($(SMALLER_FONT_FOOTPRINT),true)
+ifneq ($(MULTI_LANG_ENGINE),REVERIE)
 font_src_files += \
     NotoColorEmoji.ttf \
     NotoSansBalinese-Regular.ttf \
@@ -188,6 +189,71 @@ font_src_files += \
     NotoSansTifinagh-Regular.ttf \
     NotoSansVai-Regular.ttf \
     NotoSansYi-Regular.ttf
+
+else
+
+font_src_files += \
+    NotoColorEmoji.ttf \
+    NotoSansBalinese-Regular.ttf \
+    NotoSansBamum-Regular.ttf \
+    NotoSansBatak-Regular.ttf \
+    NotoSansBuginese-Regular.ttf \
+    NotoSansBuhid-Regular.ttf \
+    NotoSansCanadianAboriginal-Regular.ttf \
+    NotoSansCham-Regular.ttf \
+    NotoSansCham-Bold.ttf \
+    NotoSansCherokee-Regular.ttf \
+    NotoSansCoptic-Regular.ttf \
+    NotoSansEthiopic-Regular.ttf \
+    NotoSansEthiopic-Bold.ttf \
+    NotoSansGlagolitic-Regular.ttf \
+    NotoSansHanunoo-Regular.ttf \
+    NotoSansJavanese-Regular.ttf \
+    NotoSansKayahLi-Regular.ttf \
+    NotoSansKhmer-Regular.ttf \
+    NotoSansKhmer-Bold.ttf \
+    NotoSansKhmerUI-Regular.ttf \
+    NotoSansKhmerUI-Bold.ttf \
+    NotoSansLao-Regular.ttf \
+    NotoSansLao-Bold.ttf \
+    NotoSansLaoUI-Regular.ttf \
+    NotoSansLaoUI-Bold.ttf \
+    NotoSansLepcha-Regular.ttf \
+    NotoSansLimbu-Regular.ttf \
+    NotoSansLisu-Regular.ttf \
+    NotoSansMalayalam-Regular.ttf \
+    NotoSansMalayalam-Bold.ttf \
+    NotoSansMalayalamUI-Regular.ttf \
+    NotoSansMalayalamUI-Bold.ttf \
+    NotoSansMandaic-Regular.ttf \
+    NotoSansMeeteiMayek-Regular.ttf \
+    NotoSansMongolian-Regular.ttf \
+    NotoSansNewTaiLue-Regular.ttf \
+    NotoSansNKo-Regular.ttf \
+    NotoSansOlChiki-Regular.ttf \
+    NotoSansRejang-Regular.ttf \
+    NotoSansSaurashtra-Regular.ttf \
+    NotoSansSinhala-Regular.ttf \
+    NotoSansSinhala-Bold.ttf \
+    NotoSansSundanese-Regular.ttf \
+    NotoSansSylotiNagri-Regular.ttf \
+    NotoSansSyriacEstrangela-Regular.ttf \
+    NotoSansTagbanwa-Regular.ttf \
+    NotoSansTaiLe-Regular.ttf \
+    NotoSansTaiTham-Regular.ttf \
+    NotoSansTaiViet-Regular.ttf \
+    NotoSansThaana-Regular.ttf \
+    NotoSansThaana-Bold.ttf \
+    NotoSansThai-Regular.ttf \
+    NotoSansThai-Bold.ttf \
+    NotoSansThaiUI-Regular.ttf \
+    NotoSansThaiUI-Bold.ttf \
+    NotoSansTibetan-Regular.ttf \
+    NotoSansTifinagh-Regular.ttf \
+    NotoSansVai-Regular.ttf \
+    NotoSansYi-Regular.ttf
+
+endif # !REVERIE
 endif # !SMALLER_FONT_FOOTPRINT
 
 #############################################################################
